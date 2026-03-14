@@ -1,21 +1,15 @@
 import Particles from "@tsparticles/react"
-import { initParticlesEngine } from "@tsparticles/react"
-import { loadFull } from "tsparticles"
 import { useEffect, useState } from "react"
 
 export default function Starfield() {
 
-  const [init, setInit] = useState(false)
+  const [ready, setReady] = useState(false)
 
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadFull(engine)
-    }).then(() => {
-      setInit(true)
-    })
+    setReady(true)
   }, [])
 
-  if (!init) return null
+  if (!ready) return null
 
   return (
     <Particles
