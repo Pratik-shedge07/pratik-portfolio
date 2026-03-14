@@ -1,8 +1,14 @@
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, Sphere, Html } from "@react-three/drei"
 
+type TechItem = {
+  name: string
+  position: [number, number, number]
+}
+
 function TechLabels() {
-  const tech = [
+
+  const tech: TechItem[] = [
     { name: "React", position: [3, 0, 0] },
     { name: "Java", position: [-3, 0, 0] },
     { name: "MongoDB", position: [0, 3, 0] },

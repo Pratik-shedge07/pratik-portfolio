@@ -1,18 +1,25 @@
-import Particles from "@tsparticles/react";
-import { loadFull } from "tsparticles";
-import { useCallback } from "react";
-import type { Engine } from "tsparticles-engine";
+import Particles from "@tsparticles/react"
+import { initParticlesEngine } from "@tsparticles/react"
+import { loadFull } from "tsparticles"
+import { useEffect, useState } from "react"
 
 export default function Starfield() {
 
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadFull(engine);
-  }, []);
+  const [init, setInit] = useState(false)
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadFull(engine)
+    }).then(() => {
+      setInit(true)
+    })
+  }, [])
+
+  if (!init) return null
 
   return (
     <Particles
       id="tsparticles"
-      init={particlesInit}
       options={{
         background: { color: "transparent" },
         fpsLimit: 60,
@@ -26,5 +33,5 @@ export default function Starfield() {
       }}
       className="absolute inset-0 -z-10"
     />
-  );
+  )
 }
