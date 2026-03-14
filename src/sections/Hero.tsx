@@ -7,8 +7,10 @@ import MagneticButton from "../ui/MagneticButton"
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
-
+    <section
+      id="home"
+      className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden"
+    >
       <AuroraBackground />
       <FloatingIcons />
 
@@ -42,29 +44,44 @@ export default function Hero() {
           transition={{ delay: 1 }}
           className="flex gap-4 justify-center mb-8"
         >
+          <a href="#contact">
+            <MagneticButton>
+              Contact Me
+            </MagneticButton>
+          </a>
 
-          <MagneticButton>
-            Contact Me
-          </MagneticButton>
-
-
-
-          <button >
-            View Projects
-          </button>
-
+          <a href="#projects">
+            <button className="px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition">
+              View Projects
+            </button>
+          </a>
         </motion.div>
 
         <div className="flex justify-center gap-6 text-gray-300">
 
-          <Github className="hover:text-white cursor-pointer" />
-          <Linkedin className="hover:text-white cursor-pointer" />
-          <Mail className="hover:text-white cursor-pointer" />
+          <a
+            href="https://github.com/Pratik-shedge07"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className="hover:text-white hover:scale-110 transition cursor-pointer" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/pratik-shedge07/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin className="hover:text-white hover:scale-110 transition cursor-pointer" />
+          </a>
+
+          <a href="mailto:shedgepratik999@gmail.com">
+            <Mail className="hover:text-white hover:scale-110 transition cursor-pointer" />
+          </a>
 
         </div>
 
       </div>
-
     </section>
   )
 }

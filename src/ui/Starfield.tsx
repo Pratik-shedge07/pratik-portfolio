@@ -1,12 +1,13 @@
-import Particles from "@tsparticles/react"
-import { loadFull } from "tsparticles"
-import { useCallback } from "react"
+import Particles from "@tsparticles/react";
+import { loadFull } from "tsparticles";
+import { useCallback } from "react";
+import type { Engine } from "tsparticles-engine";
 
 export default function Starfield() {
 
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine)
-  }, [])
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadFull(engine);
+  }, []);
 
   return (
     <Particles
@@ -25,5 +26,5 @@ export default function Starfield() {
       }}
       className="absolute inset-0 -z-10"
     />
-  )
+  );
 }

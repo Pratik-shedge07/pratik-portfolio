@@ -4,9 +4,11 @@ type Props = {
   title: string
   description: string
   tech: string[]
+  live?: string
+  github?: string
 }
 
-export default function ProjectCard({ title, description, tech }: Props) {
+export default function ProjectCard({ title, description, tech, live, github }: Props) {
   return (
     <Tilt
       glareEnable={true}
@@ -34,13 +36,23 @@ export default function ProjectCard({ title, description, tech }: Props) {
         </div>
 
         <div className="flex gap-4">
-          <button className="px-4 py-2 bg-indigo-600 rounded-lg hover:bg-indigo-500">
-            Live Demo
-          </button>
 
-          <button className="px-4 py-2 border border-gray-600 rounded-lg hover:bg-gray-800">
-            GitHub
-          </button>
+          {live && (
+            <a href={live} target="_blank" rel="noopener noreferrer">
+              <button className="px-4 py-2 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition">
+                Live Demo
+              </button>
+            </a>
+          )}
+
+          {github && (
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <button className="px-4 py-2 border border-gray-600 rounded-lg hover:bg-gray-800 transition">
+                GitHub
+              </button>
+            </a>
+          )}
+
         </div>
 
       </div>
