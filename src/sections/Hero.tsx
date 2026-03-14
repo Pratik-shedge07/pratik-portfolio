@@ -3,13 +3,14 @@ import { Typewriter } from "react-simple-typewriter"
 import { Github, Linkedin, Mail } from "lucide-react"
 import AuroraBackground from "../ui/AuroraBackground"
 import FloatingIcons from "../ui/FloatingIcons"
+import MagneticButton from "../ui/MagneticButton"
 
 export default function Hero() {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
 
       <AuroraBackground />
-<FloatingIcons />
+      <FloatingIcons />
 
       <div className="text-center max-w-3xl px-6">
 
@@ -42,12 +43,14 @@ export default function Hero() {
           className="flex gap-4 justify-center mb-8"
         >
 
-          <button className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg hover:scale-105 transition">
-            View Projects
-          </button>
-
-          <button className="px-6 py-3 border border-gray-400 backdrop-blur-md rounded-lg hover:bg-gray-800 transition">
+          <MagneticButton>
             Contact Me
+          </MagneticButton>
+
+
+
+          <button >
+            View Projects
           </button>
 
         </motion.div>
