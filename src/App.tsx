@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar"
 import Hero from "./sections/Hero"
 import Projects from "./sections/Projects"
-import Skills from "./sections/Skills"
 import TechStack from "./sections/TechStack"
 import Contact from "./sections/Contact"
 import Footer from "./components/Footer"
@@ -22,8 +21,6 @@ function App() {
       <Hero />
 
       <Projects />
-
-      <Skills />
 
       <TechStack />
 

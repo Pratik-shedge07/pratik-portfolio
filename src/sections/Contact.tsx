@@ -1,5 +1,6 @@
 import { Mail, Linkedin, Download } from "lucide-react"
 import { motion } from "framer-motion"
+import resume from "../assets/Pratik_Shedge_Resume.pdf"
 
 export default function Contact() {
   return (
@@ -24,20 +25,33 @@ export default function Contact() {
 
           <div className="flex flex-col md:flex-row gap-6 justify-center">
 
-            <button className="flex items-center gap-3 px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition">
-              <Mail size={18} />
-              Email Me
-            </button>
+            {/* Email */}
+            <a href="mailto:shedgepratik999@gmail.com">
+              <button className="flex items-center gap-3 px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition">
+                <Mail size={18} />
+                Email Me
+              </button>
+            </a>
 
-            <button className="flex items-center gap-3 px-6 py-3 border border-gray-600 rounded-lg hover:bg-gray-800 transition">
-              <Linkedin size={18} />
-              LinkedIn
-            </button>
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/pratik-shedge07/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="flex items-center gap-3 px-6 py-3 border border-gray-600 rounded-lg hover:bg-gray-800 transition">
+                <Linkedin size={18} />
+                LinkedIn
+              </button>
+            </a>
 
-            <button className="flex items-center gap-3 px-6 py-3 border border-gray-600 rounded-lg hover:bg-gray-800 transition">
-              <Download size={18} />
-              Download Resume
-            </button>
+            {/* Resume Download */}
+            <a href={resume} download="Pratik_Shedge_Resume.pdf">
+              <button className="flex items-center gap-3 px-6 py-3 border border-gray-600 rounded-lg hover:bg-gray-800 transition">
+                <Download size={18} />
+                Download Resume
+              </button>
+            </a>
 
           </div>
 
