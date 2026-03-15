@@ -11,7 +11,7 @@ export default function Skills() {
   ]
 
   return (
-    <section className="py-32 bg-black text-white">
+    <section id="skills" className="py-32 bg-black text-white">
 
       <div className="max-w-5xl mx-auto px-6">
 

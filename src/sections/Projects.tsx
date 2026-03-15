@@ -8,6 +8,7 @@ title: "Pratik Portfolio",
 description:
 "Modern interactive developer portfolio built with React, animations, 3D elements and AI assistant.",
 tech: ["React", "TypeScript", "Tailwind", "Three.js"],
+live: "https://pratik-portfolio-henna.vercel.app/",
 github: "https://github.com/Pratik-shedge07/pratik-portfolio"
 },
 
@@ -16,6 +17,7 @@ title: "CourseCraft (LMS)",
 description:
 "Online Learning Management System where instructors can upload courses and students can enroll and learn.",
 tech: ["React", "Java", "Spring Boot", "MySQL"],
+live: "https://online-learning-managment-system.vercel.app/",
 github: "https://github.com/Pratik-shedge07/Online-Learning-Management-System"
 },
 
@@ -33,6 +35,7 @@ title: "Product Advisor",
 description:
 "A product recommendation website that helps users choose the best product based on their requirements.",
 tech: ["HTML", "CSS", "JavaScript"],
+live: "https://productadvisor.netlify.app/",
 github: "https://github.com/Pratik-shedge07/Product_advisor"
 }
 ]
