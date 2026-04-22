@@ -6,7 +6,7 @@ const projects = [
 {
 title: "Pratik Portfolio",
 description:
-"Modern interactive developer portfolio built with React, animations, 3D elements and AI assistant.",
+"Interactive developer portfolio with 3D tech sphere, custom cursor, AI assistant, and framer-motion animations. Built with React + TypeScript and deployed on Vercel.",
 tech: ["React", "TypeScript", "Tailwind", "Three.js"],
 live: "https://pratik-portfolio-henna.vercel.app/",
 github: "https://github.com/Pratik-shedge07/pratik-portfolio"
@@ -15,7 +15,7 @@ github: "https://github.com/Pratik-shedge07/pratik-portfolio"
 {
 title: "CourseCraft (LMS)",
 description:
-"Online Learning Management System where instructors can upload courses and students can enroll and learn.",
+"Full-stack Learning Management System with role-based access (instructor/student). Built RESTful APIs with Spring Boot, designed relational MySQL schema with JPA, and integrated React frontend.",
 tech: ["React", "Java", "Spring Boot", "MySQL"],
 live: "https://online-learning-managment-system.vercel.app/",
 github: "https://github.com/Pratik-shedge07/Online-Learning-Management-System"
@@ -24,7 +24,7 @@ github: "https://github.com/Pratik-shedge07/Online-Learning-Management-System"
 {
 title: "Dairy Clouds",
 description:
-"Dairy management system to track milk records, inventory, and business analytics.",
+"Full-stack dairy management system with real-time milk record tracking, inventory management, and business analytics dashboard. Uses MongoDB for flexible data storage.",
 tech: ["MongoDB", "JavaScript", "React JS"],
 live: "https://dairycloudz.netlify.app/",
 github: "https://github.com/Pratik-shedge07/Dairy_Clouds"
@@ -33,7 +33,7 @@ github: "https://github.com/Pratik-shedge07/Dairy_Clouds"
 {
 title: "Product Advisor",
 description:
-"A product recommendation website that helps users choose the best product based on their requirements.",
+"Smart product recommendation engine that filters and suggests best-fit products based on user requirements and preferences. Built with vanilla JS for fast, dependency-free performance.",
 tech: ["HTML", "CSS", "JavaScript"],
 live: "https://productadvisor.netlify.app/",
 github: "https://github.com/Pratik-shedge07/Product_advisor"

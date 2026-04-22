@@ -35,6 +35,9 @@ export default function Navbar() {
             <a href="#home" className="hover:text-white">Home</a>
           </li>
           <li>
+            <a href="#about" className="hover:text-white">About</a>
+          </li>
+          <li>
             <a href="#projects" className="hover:text-white">Projects</a>
           </li>
           <li>
@@ -59,6 +62,7 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-black/90 backdrop-blur-lg text-center py-6 space-y-4 text-gray-300">
           <a href="#home" onClick={() => setOpen(false)} className="block hover:text-white">Home</a>
+          <a href="#about" onClick={() => setOpen(false)} className="block hover:text-white">About</a>
           <a href="#projects" onClick={() => setOpen(false)} className="block hover:text-white">Projects</a>
           <a href="#skills" onClick={() => setOpen(false)} className="block hover:text-white">Skills</a>
           <a href="#contact" onClick={() => setOpen(false)} className="block hover:text-white">Contact</a>
