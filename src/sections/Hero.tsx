@@ -55,7 +55,7 @@ export default function Hero() {
           transition={{ delay: 0.8 }}
           className="text-gray-400 text-base max-w-xl mx-auto mb-8"
         >
-          B.Tech Computer Science fresher passionate about building scalable backend systems with Java & Spring Boot, and crafting modern UIs with React.
+          B.Sc Computer Science fresher passionate about building scalable backend systems with Java & Spring Boot, and crafting modern UIs with React.
         </motion.p>
 
         <motion.div

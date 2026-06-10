@@ -58,8 +58,8 @@ export default function About() {
             {/* Education Card */}
             <div className="bg-gradient-to-r from-indigo-600/10 to-purple-600/10 border border-white/10 rounded-2xl p-6">
               <p className="text-xs text-indigo-400 uppercase tracking-widest mb-3">Education</p>
-              <h3 className="text-white font-bold text-lg mb-1">B.Tech — Computer Science & Engineering</h3>
-              <p className="text-gray-400 text-sm mb-3">2021 – 2025</p>
+              <h3 className="text-white font-bold text-lg mb-1">B.Sc Computer Science</h3>
+              <p className="text-gray-400 text-sm mb-3">2022 – 2025</p>
               <div className="flex flex-wrap gap-2 mt-2">
                 {["Java", "Data Structures", "DBMS", "Operating Systems", "Computer Networks"].map(sub => (
                   <span key={sub} className="text-xs bg-white/5 border border-white/10 text-gray-300 px-3 py-1 rounded-full">
